@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Diffie-Hellman Key Exchange</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+  </head>
+  <body>
+    <div class="container">
+        <h1>Diffie-Hellman Key Exchange</h1>
+        <h1>Color illustration</h1>
+        <div style="text-align: center;">
+            <h2>Shared public color</h2>
+            <input type="color" id="shared-public-color-picker">
+        </div>
+        <div class="box">
+            <h2>+ Alice's private color</h2>
+            <input type="color" id="alice-private-color-picker">
+            <h2>= Alice's public color</h2>
+            <svg width="50" height="30">
+            <rect id="alice-public-color" x="0" y="0"  width="50" height="30" style="fill:whitesmoke"/>
+            </svg>
+            <h2>Alice's exchanged color</h2>
+            <svg width="50" height="30">
+                <rect id="alice-exchanged-color" x="0" y="0"  width="50" height="30" style="fill:whitesmoke"/>
+            </svg>
+            <h2>+ Alice's private color</h2>
+            <svg width="50" height="30">
+                <rect id="alice-private-color" x="0" y="0"  width="50" height="30" style="fill:whitesmoke"/>
+            </svg>
+            <h2>= Shared private color</h2>
+            <svg width="50" height="30">
+                <rect id="alice-shared-private-color" x="0" y="0"  width="50" height="30" style="fill:whitesmoke"/>
+            </svg>
+        </div>
+        <div class="box">
+            <h2>+ Bob's private color</h2>
+            <input type="color" id="bob-private-color-picker">
+            <h2>= Bob's public color</h2>
+            <svg width="50" height="30">
+                <rect id="bob-public-color" x="0" y="0"  width="50" height="30" style="fill:whitesmoke"/>
+            </svg>
+            <h2>Bob's exchanged color</h2>
+            <svg width="50" height="30">
+                <rect id="bob-exchanged-color" x="0" y="0"  width="50" height="30" style="fill:whitesmoke"/>
+            </svg>
+            <h2>+ Bob's private color</h2>
+            <svg width="50" height="30">
+                <rect id="bob-private-color" x="0" y="0"  width="50" height="30" style="fill:whitesmoke"/>
+            </svg>
+            <h2>= Shared private color</h2>
+            <svg width="50" height="30">
+                <rect id="bob-shared-private-color" x="0" y="0"  width="50" height="30" style="fill:whitesmoke"/>
+            </svg>
+        </div>   
+        <div style="text-align: center;">
+            <button  id="submit" style="display: inline-block; width: 100px; height: 50px;">Submit</button>
+        </div>
+    </div>
+    <div class="container">
+      <h1>Diffie-Hellman Key Exchange</h1>
+      <h1>Modulo example</h1>
+      <div class="form">
+        <h2>Alice</h2>
+        <input type="text" id="alice-private-key" placeholder="Enter private key">
+      </div>
+      <div class="form">
+        <h2>Bob</h2>
+        <input type="text" id="bob-private-key" placeholder="Enter private key">
+      </div>
+      <div style="text-align: center;">
+        <button  id="submit2" style="display: inline-block; width: 100px; height: 50px;">Submit</button>
+    </div>
+      <div class="shared-secret">
+        <h2>Shared Secret</h2>
+        <p id="shared-secret"></p>
+      </div>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
